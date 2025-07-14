@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/Football-Live/', 
-  plugins: [react()]
-})
+  plugins: [react()],
+  base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/Football-Live/' : '/', 
+});

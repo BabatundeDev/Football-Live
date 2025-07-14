@@ -25,7 +25,7 @@ const MatchCardGrid = ({ onWatch }) => {
             title: `${homeTeam} vs ${awayTeam}`,
             time: `${match.fixture.status.elapsed || 0}’`,
             score: homeGoals !== null && awayGoals !== null ? `${homeGoals} : ${awayGoals}` : 'TBD',
-            videoUrl: "src/assets/footbal-short.mp4"
+            videoUrl: "/footbal-short.mp4"
           };
         });
 
